@@ -44,7 +44,7 @@ $response = $bot->replyMessage($event->getReplyToken(), $outputText);
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => [$response],
+				'messages' => $response,
 			];
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
