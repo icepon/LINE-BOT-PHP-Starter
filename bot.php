@@ -31,11 +31,11 @@ if (!is_null($events['events'])) {
 			//];
 
 			
-			if (strpos($text == "สวัสดี") !== FALSE){
-			$messages = [ 'type'=>'text','text'=>$text]; }
-			else if (strpos($text == "ทำไร") !== FALSE){
+			if ($text == "สวัสดี"){
+			$messages = [ 'type'=>'text','text'=>"สวัสดีจ้าาาา"]; }
+			else if ($text == "ทำไรอยู่") {
 			$messages = [ 'type'=>'text','text'=>"ไม่บอก อิอิ"]; }
-			else if (strpos($text == "กินไรดี") !== FALSE){
+			else if ($text == "กินไรดี") {
 			$messages = [ 'type'=>'text','text'=>$kin[rand(0, count($kin) - 1)]]; }
 			else {
 			$messages = [ 'type'=>'text','text'=>"อิอิ"];	
