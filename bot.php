@@ -6,7 +6,7 @@ $content = file_get_contents('php://input');
 // Parse JSON
 $events = json_decode($content, true);
 //Restaurant lists
-$kin = array('1','2','3','4','5');
+//$kin = array('1','2','3','4','5');
 // Validate parsed JSON data
 if (!is_null($events['events'])) {
 	// Loop through each event
@@ -40,10 +40,10 @@ if (!is_null($events['events'])) {
 			else {
 			$messages = [ 'type'='text','text'='อิอิ']	
 			}*/
-			if ($text == 'สวัสดี'){
-			$messages = [ 'type'='text','text'='สวัสดีจ้า'] }
+			if ($text == "สวัสดี"){
+			$messages = [ 'type'='text','text'="สวัสดีจ้า"] }
 			else {
-			$messages = [ 'type'='text','text'='อิอิ']
+			$messages = [ 'type'='text','text'="อิอิ"]
 			}
 			
 			// Make a POST Request to Messaging API to reply to sender
