@@ -40,7 +40,8 @@ if (!is_null($events['events'])) {
 			else {
 			$messages = [ 'type'='text','text'='อิอิ']	
 			}*/
-			if ($text == "สวัสดี"){
+			//if ($text == "สวัสดี"){
+			if (1 == 1){
 			$messages = [ 'type'='text','text'="สวัสดีจ้า"]; }
 			else {
 			$messages = [ 'type'='text','text'="อิอิ"];
