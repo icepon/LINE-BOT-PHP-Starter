@@ -6,7 +6,7 @@ $content = file_get_contents('php://input');
 // Parse JSON
 $events = json_decode($content, true);
 //Restaurant lists
-$kin = array("1","2","3","4","5");
+$kin = array("โรงอาหาร","เป็ด","เต๊นท์","ราเมง","กินคลีน","ไม่กิน ลดความอ้วน");
 // Validate parsed JSON data
 if (!is_null($events['events'])) {
 	// Loop through each event
@@ -35,6 +35,8 @@ if (!is_null($events['events'])) {
 			$messages = [ 'type'=>'text','text'=>"สวัสดีจ้าาาา"]; }
 			else if ($text == "ทำไรอยู่") {
 			$messages = [ 'type'=>'text','text'=>"ไม่บอก อิอิ"]; }
+			else if ($text == "ไอซ์") {
+			$messages = [ 'type'=>'text','text'=>"จ๋าาาาาา"]; }
 			else if ($text == "กินไรดี") {
 			$messages = [ 'type'=>'text','text'=>$kin[rand(0, count($kin) - 1)]]; }
 			else {
