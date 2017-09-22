@@ -41,11 +41,12 @@ if (!is_null($events['events'])) {
 			$messages = [ 'type'='text','text'='อิอิ']	
 			}*/
 			//if ($text == "สวัสดี"){
-			if (1 == 1){
-			$messages = [ 'type'='text','text'="test"]; }
-			else {
-			$messages = [ 'type'='text','text'="testtttt"];
-			}
+			//if (1 == 1){
+			$messages = [ 'type'='text','text'="test"]; 
+			//}
+			//else {
+			//$messages = [ 'type'='text','text'="testtttt"];
+			//}
 			
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
