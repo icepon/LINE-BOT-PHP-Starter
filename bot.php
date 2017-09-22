@@ -41,9 +41,9 @@ if (!is_null($events['events'])) {
 			$messages = [ 'type'='text','text'='อิอิ']	
 			}*/
 			if ($text == "สวัสดี"){
-			$messages = [ 'type'='text','text'="สวัสดีจ้า"] }
+			$messages = [ 'type'='text','text'="สวัสดีจ้า"]; }
 			else {
-			$messages = [ 'type'='text','text'="อิอิ"]
+			$messages = [ 'type'='text','text'="อิอิ"];
 			}
 			
 			// Make a POST Request to Messaging API to reply to sender
