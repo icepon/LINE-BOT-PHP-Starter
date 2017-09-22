@@ -32,10 +32,13 @@ if ($text == "สวัสดี"){
 //$messages = [ 'type'=>'text','text'=>"สวัสดีจ้าาาา"]; }
 $messages = [ 'type'=>'template',
              'template'=>['type'=>'confirm','text'=>"sure",
-                          'action'=>['type'=> 'message',
+                          'action'=>[['type'=> 'message',
             'label'=>"Yes",
-            'text'=> "yes"]
-                         
+            'text'=> "yes"],
+                            ['type'=> 'message',
+            'label'=>"No",
+            'text'=> "No"]         
+                         ]
                          ]]; }
 else if ($text == "ทำไรอยู่") {
 $messages = [ 'type'=>'text','text'=>"ไม่บอก อิอิ"]; }
