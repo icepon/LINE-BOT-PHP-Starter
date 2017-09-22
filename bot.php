@@ -30,6 +30,7 @@ if (!is_null($events['events'])) {
 				
 			//];
 
+			/*
 			if (strpos($text == 'สวัสดี') == true){
 			$messages = [ 'type'='text','text'='สวัสดีจ้า'] }
 			else if (strpos($text == 'ทำไร') == true){
@@ -38,6 +39,11 @@ if (!is_null($events['events'])) {
 			$messages = [ 'type'='text','text'=$kin[rand(0, count($kin) - 1)]] }
 			else {
 			$messages = [ 'type'='text','text'='อิอิ']	
+			}*/
+			if ($text == 'สวัสดี'){
+			$messages = [ 'type'='text','text'='สวัสดีจ้า'] }
+			else {
+			$messages = [ 'type'='text','text'='อิอิ']
 			}
 			
 			// Make a POST Request to Messaging API to reply to sender
