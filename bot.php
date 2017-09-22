@@ -29,7 +29,8 @@ $replyToken = $event['replyToken'];
 
 
 if ($text == "สวัสดี"){
-$messages = [ 'type'=>'text','text'=>"สวัสดีจ้าาาา"]; }
+//$messages = [ 'type'=>'text','text'=>"สวัสดีจ้าาาา"]; }
+$messages = [ 'type'=>'template','template'=>['type'=>'confirm','text'=>"sure"]]; }
 else if ($text == "ทำไรอยู่") {
 $messages = [ 'type'=>'text','text'=>"ไม่บอก อิอิ"]; }
 else if ($text == "ไอซ์") {
