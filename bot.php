@@ -19,7 +19,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				
-				'type' => 'template','text'=>$text//'template', 'template'=>['type'=>'buttons','text'=>'what','action'=>[['type'=>'uri','label'=>'google','uri'=>'www.google.com']]]
+				'type' => 'template', 'template'=>['type'=>'confirm','text'=>'what','action'=>[['type'=>'message','label'=>'google','text'=>'www.google.com']]]
 				
 				
 				
