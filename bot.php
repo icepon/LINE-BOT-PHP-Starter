@@ -32,7 +32,7 @@ if (!is_null($events['events'])) {
 
 			
 			if (strpos($text == "สวัสดี") !== FALSE){
-			$messages = [ 'type'=>'text','text'=>"สวัสดีจ้า"]; }
+			$messages = [ 'type'=>'text','text'=>$text]; }
 			else if (strpos($text == "ทำไร") !== FALSE){
 			$messages = [ 'type'=>'text','text'=>"ไม่บอก อิอิ"]; }
 			else if (strpos($text == "กินไรดี") !== FALSE){
