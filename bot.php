@@ -6,8 +6,8 @@ $content = file_get_contents('php://input');
 // Parse JSON
 $events = json_decode($content, true);
 
-$httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($_ENV[$access_token]);
-$bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $_ENV[$access_secret]]);
+
+
 
 // Validate parsed JSON data
 if (!is_null($events['events'])) {
