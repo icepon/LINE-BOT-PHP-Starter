@@ -30,7 +30,8 @@ $replyToken = $event['replyToken'];
 
 if ($text == "สวัสดี"){
 $messages = [ 'type'=>'text','text'=>"สวัสดีจ้าาาา"]; 
-$response = $bot->replyText('<reply token>', 'hello!');}
+//$response = $bot->replyText('<reply token>', 'hello!');
+}
 else if ($text == "ทำไรอยู่") {
 $messages = [ 'type'=>'text','text'=>"ไม่บอก อิอิ"]; }
 else if ($text == "ไอซ์") {
