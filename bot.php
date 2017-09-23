@@ -1,8 +1,8 @@
 <?php
 $access_token = 'AdlGlZFCmua0+/PYr/y/iI7dF2c7DeVXkhG/FKp9K4Pp8qAuEWTv7yAx7vDX1t3B31gVTyIwIMhyO4g1XWptfVyFJ7kmUGdDrfB4Pd/UspZp0iIMrLeVq+YJIV0ZY0arNIDv4eVmwLOCm2yns5ezewdB04t89/1O/w1cDnyilFU=';
 $channel_Secret = '1efe3c53bbd84320ce616b832c262094';
-//$httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
-//$bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channel_Secret]);
+$httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
+$bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channel_Secret]);
 // Get POST body content
 $content = file_get_contents('php://input');
 // Parse JSON
@@ -29,7 +29,8 @@ $replyToken = $event['replyToken'];
 
 
 if ($text == "สวัสดี"){
-$messages = [ 'type'=>'text','text'=>"สวัสดีจ้าาาา"]; }
+$messages = [ 'type'=>'text','text'=>"สวัสดีจ้าาาา"]; 
+$response = $bot->replyText('<reply token>', 'hello!');}
 else if ($text == "ทำไรอยู่") {
 $messages = [ 'type'=>'text','text'=>"ไม่บอก อิอิ"]; }
 else if ($text == "ไอซ์") {
